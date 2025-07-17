@@ -3,6 +3,7 @@ import { onAuthStateChanged, type User } from 'firebase/auth';
 import { auth } from './lib/firebase';
 
 import Dashboard from './pages/Dashboard';
+import Authorization from './pages/Authorization/Authorization'
 import SignInForm from './components/SignInForm/SignInForm';
 import SignUpForm from './components/SignUpForm/SignUpForm';
 
@@ -28,13 +29,8 @@ function App() {
       {user ? (
         <Dashboard user={user} />
       ) : (
-        <>
-          <h1>null_switch</h1>
-          <SignInForm />
-          <div/>
-          <SignUpForm />
-        </>
-      )}
+        <Authorization />
+				)}
     </div>
   );
 }

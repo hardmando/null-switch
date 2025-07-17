@@ -1,8 +1,6 @@
 import type { User } from "firebase/auth";
-import SignInForm from "../components/SignInForm/SignInForm";
-import SignUpForm from "../components/SignUpForm/SignUpForm";
 import { logOut } from "../lib/auth";
-
+import Authorization from '../pages/Authorization/Authorization'
 
 type Props = {
   user: User;
@@ -14,12 +12,8 @@ const Dashboard = ({ user }: Props) => {
 
     if (!user) {
         return (
-            <div>
-                <h1>Please sign in or sign up</h1>
-                <SignUpForm />
-                <SignInForm />
-            </div>
-        ); 
+        	<Authorization />
+				); 
     }
 
     return (
