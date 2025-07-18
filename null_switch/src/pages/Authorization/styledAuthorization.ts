@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const StyledAuthorization = styled.div `
 	width: 100vw;
@@ -90,11 +90,14 @@ const runningLine = keyframes `
 
 export const BgRunningLine = styled.p `
 	font-size: 100px;
+
 	animation: ${crt} 1.6s infinite, ${runningLine} 5s infinite linear;
 	position: absolute;
 	font-weight: 900;
 	font-size: 200px;
 	top: 20%;
+	font-family: 'Roboto Flex';
+	font-variation-settings: 'slnt' -10;
 	white-space: nowrap;
 	width: 200vw;
 	left: 0;

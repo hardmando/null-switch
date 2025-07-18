@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Authorization from './pages/Authorization/Authorization'
 import SignInForm from './components/SignInForm/SignInForm';
 import SignUpForm from './components/SignUpForm/SignUpForm';
+import {GlobalStyle} from './styles/GlobalStyle';
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div>
+			<GlobalStyle />
       {user ? (
         <Dashboard user={user} />
       ) : (
