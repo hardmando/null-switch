@@ -3,6 +3,7 @@ import styled, {keyframes} from 'styled-components'
 export const StyledAuthorization = styled.div `
 	width: 100vw;
 	height: 100vh;
+	scrollbar-width: none;
 `
 export const FormsWrapper = styled.div `
 	background: red;
@@ -92,8 +93,10 @@ export const BgRunningLine = styled.p `
 	animation: ${crt} 1.6s infinite, ${runningLine} 5s infinite linear;
 	position: absolute;
 	font-weight: 900;
+	font-size: 200px;
 	top: 20%;
-	width: 200%;
+	white-space: nowrap;
+	width: 200vw;
 	left: 0;
 	z-index: 1;
 `

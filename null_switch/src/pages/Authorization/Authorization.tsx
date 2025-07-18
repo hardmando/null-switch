@@ -5,7 +5,7 @@ import {StyledAuthorization, FormsWrapper, BgRunningLine} from './styledAuthoriz
 const Authorization = () => {
 	return (
 		<StyledAuthorization>
-			<BgRunningLine>null_switch null_switch null_switch null_switch null_switch null_switch null_switch null_switch </BgRunningLine>
+			<BgRunningLine>null_switch null_switch null_switch null_switch </BgRunningLine>
 			<FormsWrapper>
 				<p>LOG IN</p>
 				<SignInForm />
