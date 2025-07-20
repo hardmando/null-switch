@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
 export const StyledSignUpForm = styled.div`
-    background: red;
+	position: relative;
+	max-width: 50%;
+	margin: auto;
 `
