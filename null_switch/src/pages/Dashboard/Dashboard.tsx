@@ -1,20 +1,11 @@
+import { Navigate } from 'react-router-dom';
 import type { User } from "firebase/auth";
 import { logOut } from "../../lib/auth";
 import Authorization from '../../pages/Authorization/Authorization'
+import { useAuth } from '../../context/AuthContext';
 
-type Props = {
-  user: User;
-};
-
-
-const Dashboard = ({ user }: Props) => {
-
-
-  if (!user) {
-    return (
-      <Authorization />
-    );
-  }
+const Dashboard = () => {
+  const user = useAuth();
 
   return (
     <div>

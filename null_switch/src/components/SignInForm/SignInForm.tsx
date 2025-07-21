@@ -13,7 +13,6 @@ const SignInForm = () => {
     e.preventDefault();
     try {
       await logIn(email, password);
-      alert('Signed in successfully!');
     } catch (error: any) {
       setError(error.message);
     }

@@ -21,7 +21,7 @@ const glitch = keyframes`
  --slice-3: inset(10% -6px 85% 0);
  --slice-4: inset(40% -6px 43% 0);
  --slice-5: inset(80% -6px 5% 0);
- content: "HOVER ME";
+ content: " ";
  display: block;
  position: absolute;
  top: 0;
@@ -83,7 +83,6 @@ button:hover::after {
 
 export const StyledSubmitButton = styled.button`
 	
-	adding: 16px 20px;
 	font-size: 18px;
 	font-family: 'Roboto Flex';
 	font-variation-settings: 'wght' 900, 'wdth' 150, 'opsz' 144;
@@ -111,7 +110,7 @@ export const StyledSubmitButton = styled.button`
 	 right: 0;
 	 bottom: 0;
 	 background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
-	 text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+	 text-shadow: -3px -3px 0px #FF0050, 3px 3px 0px #0050ff;
 	 clip-path: var(--slice-0);
 	}
 
@@ -123,9 +122,9 @@ export const StyledSubmitButton = styled.button`
 	}
 	&:hover {
 		color: #213547;
-		background: #ffebf1;
-		box-shadow: 6px 0px 0px #213547;
+		box-shadow: 6px 3px 0px #213547;
 		font-variation-settings: 'slnt' -20, 'wght' 1200, 'opsz' 544, 'wdth' 550;
+		background: linear-gradient(45deg, transparent 5%, #FFD6E2 5%);
 	}
 `
 

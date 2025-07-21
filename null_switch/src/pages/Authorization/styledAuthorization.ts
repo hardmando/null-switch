@@ -213,7 +213,7 @@ export const BgRunningLine = styled.p`
 export const FormsWrapperText = styled.p`
 	z-index: 2;
 	font-family: 'Roboto Flex', sans-serif;
-  font-variation-settings: 'slnt' 0, 'wght' 900, 'opsz' 144, 'wdth' 150;
+  font-variation-settings: 'slnt' 0, 'wght' 400, 'opsz' 144, 'wdth' 150;
   transition: font-variation-settings 0.8s ease;
 
   &:hover {

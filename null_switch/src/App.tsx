@@ -4,6 +4,7 @@ import { auth } from './lib/firebase';
 
 import Dashboard from './pages/Dashboard/Dashboard';
 import Authorization from './pages/Authorization/Authorization'
+import Router from './components/Router'
 import { GlobalStyle } from './styles/GlobalStyle';
 
 function App() {
@@ -26,11 +27,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      {user ? (
-        <Dashboard user={user} />
-      ) : (
-        <Authorization />
-      )}
+      <Router />
     </>
   );
 }

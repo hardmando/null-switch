@@ -18,7 +18,6 @@ const SignUpForm = () => {
     }
     try {
       await signUp(email, password);
-      alert('Signed up successfully!');
     } catch (error: any) {
       setError(error.message);
     }

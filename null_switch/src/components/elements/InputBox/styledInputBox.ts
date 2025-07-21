@@ -35,5 +35,15 @@ export const StyledInputBox = styled.input`
   border-radius: 5px;
   color: #213547;
   border: 1px solid #213547;
+	border-top: none;
+	border-left: none;
+	box-shadow: 5px 5px 0;
   font-size: 1rem;
+	transition: box-shadow .2s, border-top .2s, border-left .2s;
+
+	&:focus{
+	box-shadow: none;
+	border-top: 1px solid #213547;
+	border-left: 1px solid #213547;
+}
 `
