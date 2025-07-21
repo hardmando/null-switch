@@ -23,7 +23,8 @@ const SignInForm = () => {
       <form onSubmit={handleSubmit}>
         <InputBox
           label='email'
-          type="email" value={email}
+          type="email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="email"
         />
