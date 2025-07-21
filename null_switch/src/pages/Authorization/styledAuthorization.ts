@@ -119,7 +119,7 @@ export const FormsWrapper = styled.div`
 	font-size: 64px;
 `
 
-const glitch = keyframes`
+export const glitch = keyframes`
   0% {
     text-shadow: 1.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.6389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
@@ -207,17 +207,4 @@ export const BgRunningLine = styled.p`
 	width: 200vw;
 	left: 0;
 	z-index: -1;
-`
-
-
-export const FormsWrapperText = styled.p`
-	z-index: 2;
-	font-family: 'Roboto Flex', sans-serif;
-  font-variation-settings: 'slnt' 0, 'wght' 400, 'opsz' 144, 'wdth' 150;
-  transition: font-variation-settings 0.8s ease;
-
-  &:hover {
-    font-variation-settings: 'slnt' -20, 'wght' 1200, 'opsz' 544, 'wdth' 550;
-		animation: ${glitch} .2s;
-  }
 `

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { logIn } from "../../lib/auth";
-import { StyledSignInForm } from './styledSignInForm';
+import { StyledSignInForm, FormsWrapperText } from './styledSignInForm';
 import InputBox from '../elements/InputBox/InputBox';
 import SubmitButton from '../elements/SubmitButton/SubmitButton';
 
@@ -20,6 +20,7 @@ const SignInForm = () => {
 
   return (
     <StyledSignInForm>
+      <FormsWrapperText>LOG IN</FormsWrapperText>
       <form onSubmit={handleSubmit}>
         <InputBox
           label='email'

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { signUp } from "../../lib/auth";
 import { StyledSignUpForm } from "./styledSignUpForm";
-import InputBox from '../elements/InputBox/InputBox'
-import SubmitButton from '../elements/SubmitButton/SubmitButton'
+import InputBox from '../elements/InputBox/InputBox';
+import SubmitButton from '../elements/SubmitButton/SubmitButton';
+import { FormsWrapperText } from '../SignInForm/styledSignInForm';
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
@@ -25,6 +26,7 @@ const SignUpForm = () => {
 
   return (
     <StyledSignUpForm>
+      <FormsWrapperText>SIGN UP</FormsWrapperText>
       <form onSubmit={handleSubmit}>
         <InputBox
           label='email'

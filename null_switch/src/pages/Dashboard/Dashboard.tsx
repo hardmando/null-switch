@@ -1,7 +1,4 @@
-import { Navigate } from 'react-router-dom';
-import type { User } from "firebase/auth";
 import { logOut } from "../../lib/auth";
-import Authorization from '../../pages/Authorization/Authorization'
 import { useAuth } from '../../context/AuthContext';
 import AddApplicationForm from '../../components/AddApplicationForm/AddApplicationForm';
 
